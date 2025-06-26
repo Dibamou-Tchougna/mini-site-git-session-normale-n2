@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculette</title>
+    <style>
+        body{
+            font-size: xx-large;
+        }
+        input{
+            height: 25px;
+        }
+    </style>
+    <script>
+        var k = 0;
+        function retab(){
+            if (k==1){
+                document.getElementsByTagName("label")[0].innerHTML = "Nombre 1 :";
+                document.getElementsByTagName("label")[1].innerHTML = "Nombre 2 :";
+            }
+        }
+
+        function Som() {
+            let n1 = parseFloat(document.getElementById("nombre1").value);
+            let n2 = parseFloat(document.getElementById("nombre2").value);
+
+            retab();
+
+            if (isNaN(n1) || isNaN(n2)) {
+                alert("Veuillez entrer des nombres valides.");
+                return;
+            }
+
+            let sum = n1+n2;
+            document.getElementById("resultat").value = sum + " (Addition)";
+            alert("Résultat : " + sum);
+        }
+        function Pro() {
+            let n1 = parseFloat(document.getElementById("nombre1").value);
+            let n2 = parseFloat(document.getElementById("nombre2").value);
+
+            retab();
+
+            if (isNaN(n1) || isNaN(n2)) {
+                alert("Veuillez entrer des nombres valides.");
+                return;
+            }
+
+            let pro = n1*n2;
+            document.getElementById("resultat").value = pro + " (Multiplication)";
+            alert("Résultat : " + pro);
+        }
+        function Sou() {
+            let n1 = parseFloat(document.getElementById("nombre1").value);
+            let n2 = parseFloat(document.getElementById("nombre2").value);
+
+            retab();
+
+            if (isNaN(n1) || isNaN(n2) ) {
+                alert("Veuillez entrer des nombres valides.");
+                return;
+            }
+
+            let sou = n1-n2;
+            document.getElementById("resultat").value = sou + " (Soustraction)";
+            alert("Résultat : " + sou);
+        }
+        function Div() {
+            let n1 = parseFloat(document.getElementById("nombre1").value);
+            let n2 = parseFloat(document.getElementById("nombre2").value);
+
+            k = 1;
+
+            document.getElementsByTagName("label")[0].innerHTML = "Dividende :";
+            document.getElementsByTagName("label")[1].innerHTML = "Diviseur :";
+
+            if (isNaN(n1) || isNaN(n2) || (n1 == 0 || n2 ==0)) {
+                alert("Veuillez entrer des nombres valides.");
+                return;
+            }
+
+            let div = n1/n2;
+            document.getElementById("resultat").value = div + " (Division)";
+            alert("Résultat : " + div);
+        }
+    </script>
+</head>
+<body>
+    <h2>Calculatrice :</h2>
+    <label for="nombre1">Nombre 1 :</label>
+    <input type="number" id="nombre1"> <br><br> 
+    <label for="nombre2">Nombre 2 :</label>
+    <input type="number" id="nombre2"> <br><br>
+    <label for="resultat">Résultat :</label>
+    <input type="text" id="resultat" disabled> <br><br>
+    <button onclick="Som()">Somme</button>
+    <button onclick="Pro()">Produit</button>
+    <button onclick="Sou()">Soustraction</button>
+    <button onclick="Div()">Division</button>
+</body>
+</html>

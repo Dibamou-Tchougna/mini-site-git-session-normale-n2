@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Titre de la page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="img">
+                <img src="../Contenu Visuel/Image/image.jpg" alt="">
+            </div>
+
+            <div class="titre">
+                <!--Titre-->
+                <h1>Bienvenue sur mon site</h1>
+                <h2>Un sous titre</h2>
+                <button><a href="">Télécharger Mon CV</a></button>
+            </div>
+        </header>
+        <nav align="center">
+            <ul>
+                <li><a href="../TP1/page/">Blog</a></li>
+                <li><a href="../Page web/CSS FLEX & GRID/flex-box.html">FlexBox</a></li>
+                <li><a href="../Page web/CSS FLEX & GRID/Grid.html">Grid</a></li>
+            </ul>
+        </nav>
+        <section>
+            <!--paragraphe-->
+            <p>Ceci est un paragraphe contenant du <strong>texte en gras</strong> et du <em>texte en italique</em>.</p>
+
+            <!--lien-->
+            <p style="color: darkgreen;">Visitez <a href="https//www.example.com" style="color: blue;">ce site web</a> pour plus d'informations.</p>
+
+            <!--Texte généré-->
+            <p>
+                <b>Changement climatique est l'un des défis les plus pressants de notre époque.</b><br>
+                <i>Il se manifeste par une augmentation des températures globales, des phénomènes météorologiques extrêmes</i><br>
+                tels que les ouragans <strong> les sécheresses, et une montée</strong> du niveau des mers.<br>
+                Ces changements ont des répercussions considérables sur les écosystèmes, la biodiversité et les sociétés humaines,<br>
+                menaçant <small> sécurité alimentaire, les habitats</small> naturels et les économies à travers le monde.<br>
+                Il est donc crucial d'adopter des mesures concertées pour atténuer les effets du changement climatique,<br>
+                notamment en réduisant les émissions de gaz à effet de serre, en favorisant les énergies renouvelables et en promouvant des pratiques durables.<br>
+                Lorem ipsum dolor sit amet, <sub>adipiscing elit</sub>. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.<br>
+                Sed nisi. Nulla quis sem at <del>quis</del> nibh elementum imperdiet. Duis <mark>ipsum</mark>. Praesent mauris.<br>
+                Fusce nec <sup>sed augue</sup> semper porta. <ins>Mauris massa.</ins>
+            </p>
+            Lorem ipsum dolor sit amet, adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+        </section>
+
+        <section class="s1">
+            <!--div pour les listes-->
+            <div class="d1">
+                <h2>Listes</h2>
+                <!--liste non ordonnée-->
+                <ul>
+                    <li>Element 1</li>
+                    <li>Element 2</li>
+                    <li>Element 3</li>
+                </ul>
+
+                <!--liste ordonnée-->
+                <ol>
+                    <li>Première etape</li>
+                    <li>Deuxième etape</li>
+                    <li>Troisième etape</li>
+                </ol>
+            </div>
+
+            <div class="d1">
+                <!--tableau--> 
+                <table border="1" style="color: black;" align="center">
+                    <tr>
+                        <th style="color: darkred;">Nom</th>
+                        <th style="color: darkred;">Age</th>
+                    </tr>
+                    <tr>
+                        <td>Alice</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>Bob</td>
+                        <td>30</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="d1">
+                <!--formulaire-->
+                <form action="submit.php" method="POST" style="color: black;">
+                    <label for="nom" style="color: darkgreen;">Nom :</label>
+                    <input type="text" id="nom" name="nom">
+    
+                    <label for="email" style="color: darkgreen;">Email :</label>
+                    <input type="email" id="email" name="email">
+                    <button type="submit" style="color: white; background-color: darkblue;">Envoyer</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="s2">
+            <h2 style="color: darkred;">Médias</h2>
+            <img src="../Contenu Visuel/Image/image.jpg" alt="Description de l'image" width="300" height="200">
+            <video src="../Contenu Visuel/Video/video.mp4" controls width="300" height="200"></video>
+            <audio src="../Contenu Audio/musique.mp3" controls></audio>
+        </section>
+        <footer>
+            <div style="background-color: lightgrey;padding:10px;text-align: center;color: black;">
+                <p>Ce texte est dans un <span style="color:red;">conteneur div</span>.</p>
+            </div>
+        </footer>
+    </body>
+</html>

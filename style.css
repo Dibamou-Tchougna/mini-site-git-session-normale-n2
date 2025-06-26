@@ -1,0 +1,165 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background: linear-gradient(90deg, darkblue, skyblue);
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header .img{
+    border: solid;
+    border-radius: 25%;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    padding: auto;
+}
+
+header .img img{
+    border-radius: 25%;
+    height: 100px;
+    width: 100px ;
+}
+
+header .titre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    color: white;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2{
+    color: white;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header .titre button {
+    width: 40%;
+    height: 30px;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header .titre button:hover {
+    background-color: darkred;
+    color: white;
+}
+
+section{
+    align-self: center;
+    width:90%;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+    background-color: antiquewhite;
+    border-radius: 10%;
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: solid;
+    border-color: black;
+}
+
+.s1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.s1 .d1{
+    width: 30%;
+    margin: 5px;
+}
+
+.s1 .d1 h2{
+    color: green;
+}
+
+.s1 .d1 ul{
+    font-size: 25px;
+    justify-items: center;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.s1 .d1 ol{
+    font-size: 25px;
+    justify-items: center;
+    align-items: center;
+    color: whitesmoke;
+    list-style-type: none;
+}
+
+.s1 table{
+    margin: auto;
+    margin-top: 25%;
+    margin-bottom: 25%;
+    border-radius: 10px;
+    border-color: rgb(127, 73, 56);
+    border-style: dashed;
+}
+
+.s1 table th{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+.s1 form{
+    margin-top: 25%;
+    border: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.s1 form button {
+    width: 40%;
+    height: 30px;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.s1 form button:hover {
+    background-color: darkred;
+    color: white;
+}
+
+/* Ajout pour la liste */
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #4CAF50;
+    color: white;
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
